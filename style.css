@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.app {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    flex-direction: column;
+}
+header h1 {
+    margin: 30px 0px;
+    font-size: 40px;
+    text-align: center;
+    color: #ff5b5b;
+}
+.launchpad {
+    border: 1px solid #313131;
+    border-radius: 10%;
+    padding: 5%;
+    background-color: #313131;
+}
+.pads {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(4, 25%) / repeat(4, 25%) ;
+    grid-gap: 5px;
+}
+.pads > div {
+    height: 100px;
+    width: 100px;
+    flex: 1;
+    border-radius: 20%;
+}
+/* pads aqua */
+.pad1, .pad3, .pad4, .pad9 {
+    background-color: #09fbd3;
+}
+.pad1:active, .pad3:active, .pad4:active, .pad9:active {
+    box-shadow: 0 0 30px #09fbd3;
+}
+/* pads amarillo */
+.pad2, .pad7 {
+    background-color: #f5d300;
+}
+.pad2:active, .pad7:active {
+    box-shadow: 0 0 30px #f5d300;
+}
+/* pads lila */
+.pad5, .pad8 {
+    background-color: #9d72ff;
+}
+.pad5:active, .pad8:active {
+    box-shadow: 0 0 30px #9d72ff;
+}
+/* pads verde */
+.pad6, .pad14, .pad15 {
+    background-color: #7ffe53;
+}
+.pad6:active, .pad14:active, .pad15:active {
+    box-shadow: 0 0 30px #7ffe53;
+}
+/* pads rosa */
+.pad10, .pad11, .pad12 {
+    background-color: #fe53bb;
+}
+.pad10:active, .pad11:active, .pad12:active {
+    box-shadow: 0 0 30px #fe53bb;
+}
+/* pads rojo */
+.pad13, .pad16 {
+    background-color: #ff5b5b;
+}
+.pad13:active, .pad16:active {
+    box-shadow: 0 0 30px #ff5b5b;
+}
